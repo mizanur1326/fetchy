@@ -1,37 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fetchy || Home</title>
+</head>
+
+<body>
+    <div class="lg:max-w-[1440px]">
+        <header>
             <nav>
                 <div class="navbar mx-auto lg:w-[1240px]">
-                    <div class="navbar-start">
-                        <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </div>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a href="index.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text active">Home</a></li>
-                            <li><a href="who-we-are.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Who we are</a></li>
-                            <li><a href="how-to-buy.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">How To Buy</a></li>
-                            <li><a href="roadmap.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Roadmap</a></li>
-                            <li><a href="team.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Team</a></li>
-                            <li><a href="contact.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Contact</a></li>                               
-                        </div>
-                        <a href="#"><img src="assets/images/logo.png" alt="logo" class="h-[50px] w-[90px] lg:h-[76px] lg:w-[140px]" /></a>
+                  <!-- Logo aligned to the left -->
+                  <div class="navbar-start">
+                    <a href="#">
+                      <img src="assets/images/logo.png" alt="logo" class="h-[50px] w-[90px] lg:h-[76px] lg:w-[140px]" />
+                    </a>
+                  </div>
+              
+                  <!-- Center menu items for larger screens -->
+                  <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                      <li><a href="index.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text active">Home</a></li>
+                      <li><a href="who-we-are.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Who we are</a></li>
+                      <li><a href="how-to-buy.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">How To Buy</a></li>
+                      <li><a href="roadmap.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Roadmap</a></li>
+                      <li><a href="team.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Team</a></li>
+                      <li><a href="contact.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Contact</a></li>
+                    </ul>
+                  </div>
+              
+                  <!-- Right-aligned mobile toggle button -->
+                  <div class="navbar-end">
+                    <div class="dropdown lg:hidden">
+                      <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                      </div>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a href="index.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text active">Home</a></li>
+                        <li><a href="who-we-are.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Who we are</a></li>
+                        <li><a href="how-to-buy.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">How To Buy</a></li>
+                        <li><a href="roadmap.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Roadmap</a></li>
+                        <li><a href="team.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Team</a></li>
+                        <li><a href="contact.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Contact</a></li>
+                      </ul>
                     </div>
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
-                            <li><a href="index.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text active">Home</a></li>
-                            <li><a href="who-we-are.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Who we are</a></li>
-                            <li><a href="how-to-buy.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">How To Buy</a></li>
-                            <li><a href="roadmap.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Roadmap</a></li>
-                            <li><a href="team.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Team</a></li>
-                            <li><a href="contact.html" class="text-xl text-[#9C9C9C] hover:bg-gradient-to-r hover:from-[#FF00EA] hover:to-[#2600FC] inline-block hover:text-transparent bg-clip-text">Contact</a></li>                            
-                        </ul>
+                    <!-- Additional button or content for larger screens -->
+                    <div class="hidden lg:block">
+                      <a class="btn text-white bg-gradient-to-r from-[#2600FC] to-[#FF00EA] rounded-full">Connect Wallet 
+                        <img src="assets/icons/wallet.png" alt="">
+                      </a>
                     </div>
-                    <div class="navbar-end hidden lg:block">
-                        <a class="btn text-white bg-gradient-to-r from-[#2600FC] to-[#FF00EA] rounded-full">Connect Wallet <img src="assets/icons/wallet.png" alt=""></a>
-                    </div>
+                  </div>
                 </div>
-            </nav>
+              </nav>
+              
+        </header>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
