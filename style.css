@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Chastherstocks'; /* Name your font family */
+    src: url('assets/fonts/chastherstocks.ttf'); /* Locate the .ttf file within your directory*/
+  }
+  
+  body {
+    font-family: 'Chastherstocks', sans-serif; /* Use the font family */
+  }
+
+  .active {
+    background: linear-gradient(to right, #FF00EA, #2600FC);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
